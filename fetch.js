@@ -90,6 +90,8 @@
         resolve(reader.result)
       }
       reader.onerror = function() {
+        console.log('xxx');
+        console.log(reader)
         reject(reader.error)
       }
     })

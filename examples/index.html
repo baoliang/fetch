@@ -6,7 +6,7 @@
 </head>
 <body>
   <script>
-    var result = fetch('https://github.com')
+    var result = fetch('http://localhost:3000/solidus/api/user_checks/generate_magic_code?phone=1111111111&type=reg', {method: "post"})
 
     result.then(function(response) {
       console.log('response', response)
